@@ -44,7 +44,7 @@ def is_bitlink(token, link):
 
 if __name__ == "__main__":
     load_dotenv()
-    bitly_token = os.getenv('BITLY_API')
+    bitly_token = os.environ['BITLY_API']
     parser = argparse.ArgumentParser(description="Программа сокращает ссылки или позволяет посмотреть количество кликов по ссылке")
     parser.add_argument("url", help="Ссылка для выполнения программы.")
     args = parser.parse_args()
